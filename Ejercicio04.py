@@ -1,6 +1,10 @@
-números = ["8", "5", "3", "4"]
-cuadrado = []
-for numero in números:
-    x = int(numero)**2
-    cuadrado.append(x)
-print(cuadrado)
+#Escribir una función que reciba una muestra de números en una lista y devuelva su media.
+def calcular_media(numeros):
+    suma = sum(int(numero) for numero in numeros)
+    cuantos_numeros = len(numeros)
+    media = suma / cuantos_numeros
+    return media
+
+numeros = ["8", "5", "3", "4"]
+resultado = calcular_media(numeros)
+print(resultado)
